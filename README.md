@@ -8,7 +8,7 @@ $$\Psi_{nlm}(p,\theta_p,\phi_p)\propto (-i)^l \frac{n^l p^l}{(n^2p^2+1)^{l+2}} C
 The python script in this repository can be run as `write_hydrogen_wfns.py [WFNfilename] [nbnd < 20]` and it will populate an existing BerkeleyGW WFN.h5 file with the first `nbnd` spinor wavefunctions for a hydrogen atom at the origin, in the order:
 $$(n,l,m,m_s)=(1,0,0,+1/2),(1,0,0,-1/2),(2,0,0,+1/2),(2,0,0,-1/2),(2,1,-1,+1/2),(2,1,-1,-1/2),(2,1,0,+1/2)...$$.
 
-The file `WFN_small.h5` was generated from a calculation in Quantum ESPRESSO with a 100 Ry plane-wave cutoff in a $20 \AA \times 20 \AA \times 20 \AA$ unit cell. These parameters provide fairly converged results up to the 3s/3p states, but it may be useful to generate another calculation with a higher cutoff or larger box for wavefunctions higher than that.
+The file `WFN_small.h5` was generated from a calculation in Quantum ESPRESSO with a 100 Ry plane-wave cutoff in a $20 \r{A} \times 20 \r{A} \times 20 \r{A}$ unit cell. These parameters provide fairly converged results up to the 3s/3p states, but it may be useful to generate another calculation with a higher cutoff or larger box for wavefunctions higher than that.
 
 
 ## References
