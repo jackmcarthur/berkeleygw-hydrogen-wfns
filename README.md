@@ -1,5 +1,5 @@
 # berkeleygw-hydrogen-wfns
-If you want to modify the BerkeleyGW package, it is wise to compare the outputs of new code (exchange integrals, transition matrix elements, orbital moments...) with published results. I recently wrote a routine for which the most obvious comparison was an analytical result for the hydrogen single-particle wavefunctions $\psi_{nlm\uparrow/\downarrow}$.
+If you want to modify the BerkeleyGW package, it is wise to compare the outputs of new code (exchange integrals, transition matrix elements, orbital moments...) with published results. I recently wrote a routine for which the most obvious comparison was an analytical result for the hydrogenic single-particle wavefunctions $\psi_{nlm\uparrow/\downarrow}$.
 
 The DFT wavefunctions typically used as inputs in BerkeleyGW would be insufficiently accurate for this purpose due to self-interaction error, so I instead implemented the exact form of the hydrogen wavefunctions in the BerkeleyGW WFN.h5 format. As BerkeleyGW stores the wavefunctions in plane wave components, this required the momentum-space representation of the hydrogen wavefunctions:[[1]](#1)
 
